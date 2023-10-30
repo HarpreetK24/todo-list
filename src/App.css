@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgba(35, 30, 40);; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 0px 50px 10px #908295;
+  text-align: center;
+}
+
+.del-btn{
+  background-color: #ff3b30;
+}
+
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.input-section {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-container button {
+  margin-left: 10px;
+}
+
+
+.clear-button {
+  background-color: #ff3b30;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+/* Dark Theme */
+.dark {
+  background-color: #27283e;
+  color: #fff;
+}
+
+.dark .App{
+  background-color: black;
+  /* box-shadow: 10px 10px 10px #5c4a63; */
+}
+
+.dark h1 {
+  /* Set the h1 text color to white in dark mode */
+  color: rgba(171 106 251);
+}
+
+.dark body{
+  background-color: rgba(35, 30, 40);
+}
+
+
+.dark .input-section input[type="text"], .dark .save,
+.dark li {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Light Theme */
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.light .input-section input[type="text"],
+.light .input-section button,
+.light li {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #007BFF;
+}
